@@ -22,4 +22,7 @@ method profesionalMasBarato(){
 method esDeGenteAcotada(){
     return listaDeProfesionales.all({p=>p.enQueProvinciaPuedeTrabajar().size()<=3})
 }
+method puedeSatisfacerA(unSolicitante){
+    return listaDeProfesionales.any({p=>unSolicitante.puedeSerAtendidoPor(p)})
+}
 }
