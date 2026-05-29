@@ -1,3 +1,6 @@
+import profesionales.*
+import universidades.*
+
 class Persona{
 const provincia
 
